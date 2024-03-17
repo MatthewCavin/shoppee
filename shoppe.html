@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopee</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;  
+    }
+
+    body {
+        min-height: 200vh;
+        background-color: white;
+    }
+
+    header.shoppeee div.container {
+        background: linear-gradient(-180deg, #915b56, #f63);
+        color: red;
+        height: 150px;
+        position: sticky;
+        width: 100%;
+        gap: 100px;
+        top: 0;
+    }
+
+    header.shoppeee div.container nav a.nav-item { 
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 15px;
+        float:left ;
+        line-height: 10px;
+        position: sticky;  
+    }
+
+    header.shoppeee div.container nav a.nav-items{
+        color: white;
+        float: right;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 15px;
+        line-height: 10px;
+        position: sticky;
+    }
+
+    header.shoppeee div.container nav a:hover{
+        color: gray;
+    }
+      
+    header.shoppeee div.container nav a.nav-items:hover{
+        color: rgb(187, 42, 126);
+    }
+
+    header.shoppeee div.container nav div.sidebar{
+        display: flex;
+        margin: 0;
+    }
+
+    header.shoppeee div.container nav div.sidebar form{
+        padding: -30px;
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        height: 36p;
+    }
+
+    header.shoppeee div.container nav div.sidebar form input.search-heres{
+        width: 3000px;
+        padding: 5px 10px;
+        height: 36px;
+    }
+
+    div.cart{
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+        font-size: 30px; 
+    }
+
+    div.underb {
+        color: white;
+        text-align: center;
+        gap: 20px ;
+        display: flex;
+        justify-content: center;
+        margin-right: 100px;
+    }
+
+    div.clear {
+        clear: both;
+    } 
+
+    .box1 {grid-area: menu;}
+    .box2 {grid-area: main;}
+    .box3 {grid-area: footer;}
+    .button {grid-area: button;}
+
+    .container1 {
+        display: grid;
+        grid-template-areas: 
+        'menu main main'
+        'menu footer footer';
+        justify-content: center;
+        margin-top: 30px;
+        }
+    
+    .box1 {
+    height: 255px;
+    width: 700px;
+    margin-right: 4.7px;
+    }
+    </style>
+  </head>
+  <body>
+    <header class="shoppeee">
+      <div class="container">
+        <nav>
+          <a href="#" class="nav-item">Seller centre</a>
+          <a href="#" class="nav-item">Download</a>
+          <a href="#" class="nav-item">Ikuti kami di 😎😊🤩</a>
+          <a href="#" class="nav-items">Daftar</a>
+          <a href="#" class="nav-items">Log in</a>
+          <a href="#" class="nav-items">🌍Bahasa Indonesia</a>
+          <a href="#" class="nav-items">Bantuan</a>
+          <a href="#" class="nav-items">🔔Notifikasi</a>
+            <div class="clear"></div>
+              <div class="sidebar">
+                <img style=" height: 90px; width: 130px; margin-left: 10px;" src="https://freelogopng.com/images/all_img/1656181621shopee-logo-white.png" alt="logo shopee">
+                <form action="#" target="_blank">
+                    <input class="seach-heres" type="text" name="q" id="" placeholder="Daftar & Dapatkan Voucher Gratis!" style="width: 750px;" height="40px;" />
+                    <input class="logo"
+                      type="submit"
+                      value="🔍"
+                      style=" height: 40px; border: none; cursor: pointer; width: 60px; background-color: #2de8f5;border: 1px solid white;"/>
+                      <div class="cart">🛒</div>
+                    </div>
+                    <div class="underb">
+                      <span>Kaos</span>
+                      <span>Kacamata</span>
+                      <span>Sepatu</span>
+                      <span>Mobil</span>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+    </header> 
+    <section>
+      <div class="container1">
+        <div class="box1">
+            <img style="width: 700px; height: 255px;" src="https://cf.shopee.co.id/file/id-50009109-3fac24c8bd354af14ed17e922f26c4de_xxhdpi" alt="1">
+        </div>
+        <div class="box2">
+            <img style="width: 480px; height: 125px;" src="https://cf.shopee.co.id/file/id-50009109-9b911cc4495ca0eb6990cf3b04cf5154_xhdpi" alt="2">
+        </div>
+        <div class="box3">
+            <img style="width: 480px; height: 125px;" src="https://cf.shopee.co.id/file/id-50009109-027eccb34aa1c288a1118681dd4b5e29_xhdpi" alt="3">
+        </div>
+    </div>
+    </section>
+  </body>
+</html>
